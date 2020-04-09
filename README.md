@@ -1,5 +1,8 @@
 # my-directory
 
+Small Vue app connected to an API to randomly generate user data.
+
+
 ## Project setup
 ```
 npm install
