@@ -1,16 +1,16 @@
 <template>
-	<div class="columns is-centered">
-		<div class="column tile is-parent is-vertical is-three-fifths">
-			<div class="columns tile is-child box has-text-centered-touch" v-for="user in users" :key="user.id.value">
-				<div class="column is-narrow">
+	<div class="columns is-multiline">
+		<div class="column is-half tile" v-for="user in users" :key="user.id.value">
+			<div class="columns tile box is-gapless">
+				<div class="column is-one-third">
 					<img :alt="`${user.name.first} ${user.name.last} Image`"
 					:src="user.picture.large"/>
 				</div>
 
 				<article class="column">
-					<p class="capitalize"><strong>{{ user.name.first }} {{ user.name.last }}</strong></p>
-					<p class="capitalize">Age: {{ user.dob.age }}</p>
-					<p class="capitalize">Gender: {{ user.gender }}</p>
+					<p><strong>{{ user.name.first }} {{ user.name.last }}</strong></p>
+					<p>Age: {{ user.dob.age }}</p>
+					<p>Gender: {{ user.gender }}</p>
 					<p>Email: {{ user.email }}</p>
 					<p>Phone: {{ user.phone }}</p>
 				</article>
@@ -30,3 +30,6 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+</style>

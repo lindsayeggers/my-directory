@@ -1,9 +1,9 @@
 <template>
-	<section class="section">
-		<div class="container">
-			<div class="rows has-text-centered">
+	<section class="section hero is-fullheight">
+		<div class="container hero-body">
+			<div class="rows box has-text-centered">
 				<article class="introduction row is-full">
-					<p><strong>Welcome to My Directory</strong>, a directory of users.</p>
+					<p class="is-size-2">Welcome to <strong>People Finder</strong>, a directory of users</p>
 				</article>
         <div class="row is-full">
 					<router-link class="capitalize button is-primary is-size-6" to="/results">
@@ -17,12 +17,15 @@
 
 <script>
 export default {
-	name: 'Home'
+  name: 'Home'
 }
 </script>
 
 <style scoped>
 .introduction {
 	padding-bottom: 3rem;
+}
+.section {
+  background-image: url('../assets/social-media.png');
 }
 </style>
