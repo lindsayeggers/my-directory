@@ -5,6 +5,8 @@ import App from './App.vue';
 
 Vue.use(VueRouter);
 
+require("./assets/main.scss")
+
 new Vue({
 	router,
 	render: h => h(App),
