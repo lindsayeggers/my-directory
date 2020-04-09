@@ -2,6 +2,8 @@
   <section class="section">
 		<div class="container">
 
+      <Export :page="page" />
+
 			<Tile :users="users" />
 
       <Pagination
@@ -16,12 +18,14 @@
 
 <script>
 import axios from 'axios';
+import Export from '@/components/Export.vue';
 import Pagination from '@/components/Pagination.vue'
 import Tile from '@/components/Tile.vue'
 
 export default {
   name: "Results",
   components: {
+    Export,
     Pagination,
     Tile
   },
