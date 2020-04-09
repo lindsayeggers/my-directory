@@ -5,9 +5,8 @@
 				<article class="introduction row is-full">
 					<p><strong>Welcome to My Directory</strong>, a directory of users.</p>
 				</article>
-
         <div class="row is-full">
-					<router-link class="capitalize button is-light is-size-6" to="/results">
+					<router-link class="capitalize button is-primary is-size-6" to="/results">
 						View Results
 					</router-link>
 				</div>

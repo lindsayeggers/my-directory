@@ -1,11 +1,11 @@
 <template>
 	<div class="columns is-centered has-text-centered">
 		<nav class="is-centered" role="navigation" aria-label="pagination">
-			<button class="button is-light is-size-6" @click="prevPage" :disabled="isDisabled">
+			<button class="button is-primary is-size-6" @click="prevPage" :disabled="isDisabled">
 				Previous
 			</button>
 
-			<button class="button is-light is-size-6" @click="nextPage">
+			<button class="button is-primary is-size-6" @click="nextPage">
 				Next page
 			</button>
 		</nav>

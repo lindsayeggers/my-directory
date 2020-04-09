@@ -1,6 +1,6 @@
 <template>
 	<div class="columns">
-		<button class="button is-light is-size-6" v-on:click="exportCSV">
+		<button class="button is-primary is-size-6" v-on:click="exportCSV">
 			Export to CSV
 		</button>
 	</div>
